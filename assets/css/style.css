@@ -219,6 +219,7 @@ h3{ font-size: 20px; font-weight: 600; color: var(--text-color-second); margin-b
 }
 .project-box{
     text-decoration: none;
+    color: inherit;
     position: relative;
     display: flex;
     justify-content: center;
@@ -439,4 +440,23 @@ footer{
     .project-box{ width: 100%; }
     .form-inputs{ flex-direction: column; }
     .input-field{ width: 100%; }
+}
+
+/* ----- FORCE PROJECT TECH COLOR (inside <a> tags) ----- */
+a.project-box .project-tech,
+a.project-box label,
+a.project-box h3 {
+    color: var(--text-color-second) !important;
+}
+a.project-box label {
+    color: #777 !important;
+}
+a.project-box .project-tech {
+    color: #555 !important;
+}
+a.project-box:hover .project-tech,
+a.project-box:hover label,
+a.project-box:hover h3,
+a.project-box:hover i {
+    color: var(--color-white) !important;
 }
