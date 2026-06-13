@@ -460,3 +460,11 @@ a.project-box:hover h3,
 a.project-box:hover i {
     color: var(--color-white) !important;
 }
+
+/* Nuclear override for project-tech inside anchor */
+a.project-box span.project-tech {
+    color: #555 !important;
+}
+a.project-box:hover span.project-tech {
+    color: #ffffff !important;
+}
